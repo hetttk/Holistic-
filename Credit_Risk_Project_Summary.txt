@@ -1,0 +1,69 @@
+
+CREDIT RISK DATA PREPROCESSING & FEATURE ENGINEERING PROJECT SUMMARY
+
+1. Missing Value Handling
+Several columns contained missing values, including age, annual_income, credit_score, employment_type, and gender.
+
+Methods Applied:
+- Median Imputation: age, annual_income
+- Most Frequent Imputation: gender, employment_type
+- KNN Imputation: numerical features comparison
+- MICE (Iterative Imputer): multivariate imputation comparison
+
+Result:
+All missing values were handled successfully, making the dataset complete and suitable for machine learning.
+
+2. Outlier Handling
+Outlier detection was performed on annual_income, loan_amount, and credit_score.
+
+Techniques Evaluated:
+- Z-Score Method
+- IQR Method
+- Percentile Method
+- Winsorization
+
+Final Approach:
+The IQR method was selected as the primary treatment technique because the financial variables showed skewed distributions.
+
+Result:
+Extreme observations were reduced while preserving most valid customer records.
+
+3. Encoding Techniques
+Ordinal Encoding:
+- education_level
+
+Label Encoding:
+- gender
+
+One-Hot Encoding:
+- region
+- loan_purpose
+
+Result:
+All categorical variables were converted into numerical representations suitable for machine learning algorithms.
+
+4. Scaling and Transformations
+Scaling Techniques Applied:
+- StandardScaler
+- MinMaxScaler
+- RobustScaler
+- MaxAbsScaler
+
+Transformations Applied:
+- Log Transformation
+- Reciprocal Transformation
+- Square Root Transformation
+- Box-Cox Transformation
+- Yeo-Johnson Transformation
+
+5. Feature Engineering
+New Features Created:
+- Debt-to-Income Ratio
+- Average Monthly Transactions
+- Spending-to-Income Ratio
+
+6. Final Dataset Readiness
+The final dataset contains no missing values, reduced outlier impact, encoded categorical variables, scaled numerical variables, and engineered business features. It is ready for machine learning modeling.
+
+Conclusion:
+This project successfully implemented an end-to-end data preprocessing and feature engineering workflow for customer credit risk analysis. The final dataset is prepared for machine learning model development and loan default prediction.
