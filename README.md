@@ -184,10 +184,10 @@ These features help machine learning models capture temporal patterns.
 Applied to:
 
 - education_level
-''' from sklearn.preprocessing import OrdinalEncoder
+### from sklearn.preprocessing import OrdinalEncoder
 
 oe = OrdinalEncoder(categories=[['Primary', 'Secondary', 'Graduate', 'Post-Graduate']])
-df[['education_level']] = oe.fit_transform(df[['education_level']]) '''
+df[['education_level']] = oe.fit_transform(df[['education_level']]) ###
 
 
 Order:
